@@ -17,7 +17,7 @@ class App extends Component {
     const text = this.state.userInput.split('')
     text.splice(index, 1)
     const updatedText = text.join('')
-    this.userInput({userInput: updatedText})
+    this.setState({userInput: updatedText})
   }
 
   render() {
